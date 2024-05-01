@@ -133,6 +133,5 @@ Também seria interessante a gravadora incentivar o novo artista a lançar um ca
   <summary><strong style="font-size: 16px;">Links de interesse</strong></summary>
   
 - Google Colab: https://colab.research.google.com/drive/1ksAfUp8JR4KY0r7qbY5UWm24zwz6KcDr?usp=sharing
-- Tabela “_dados_spotify_categorizados_”: https://drive.google.com/file/d/15KVs-MiqPPnjseeVkgVWiiFx9jQ97eO0/view?usp=sharing
 
 
