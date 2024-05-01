@@ -135,3 +135,8 @@ Como indicações e insights sobre o projeto, dado que a presença de uma músic
 Também seria interessante a gravadora incentivar o novo artista a lançar um catálogo diversificado de músicas, para aumentar sua visibilidade e sucesso na plataforma. Além disso, embora algumas características das músicas possam influenciar o sucesso em termos de número de streams, é importante reconhecer que nem todas as características demonstraram uma relação estatisticamente significativa. Portanto, ao produzir músicas para o novo artista, a gravadora pode se concentrar nas características que mostraram influência significativa, como danceability e speechiness, e considerar ajustes para melhorar esses aspectos nas faixas. A gravadora também pode observar com atenção a correlação positiva entre as músicas mais populares no ranking do Spotify e seu desempenho nas plataformas Deezer e Apple. Isso sugere que estratégias bem-sucedidas no Spotify podem ser replicadas em outras plataformas de streaming para maximizar o alcance do novo artista Seguindo estas sugestões, a gravadora pode aumentar as chances de sucesso do novo artista no mercado de streaming, aproveitando os insights gerados a partir das análises das hipóteses.
 </details>
 
+<details>
+  <summary><strong style="font-size: 16px;">Links de interesse</strong></summary>
+  
+  - **Google Colab:** https://colab.research.google.com/drive/1ksAfUp8JR4KY0r7qbY5UWm24zwz6KcDr?usp=sharing
+
