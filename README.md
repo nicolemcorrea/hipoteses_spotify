@@ -6,6 +6,14 @@
   
   Através de uma base de dados da plataforma Spotify, o objetivo deste projeto foi aplicar testes estatísticos (correlação, teste de significância e regressão linear) para validar ou refutar hipóteses levantadas num cenário onde uma gravadora está buscando lançar um novo artista e busca entender o contexto da indústria musical.
 
+As hipóteses levantadas foram:
+
+- **_Hipótese 1_:** Músicas com BPM (Batidas Por Minuto) mais altos fazem mais sucesso em termos de número de streams no Spotify.
+- **_Hipótese 2_:** As músicas mais populares no ranking do Spotify também possuem um comportamento semelhante em outras plataformas, como a Deezer.
+- **_Hipótese 3_:** A presença de uma música em um maior número de playlists está correlacionada com um maior número de streams.
+- **_Hipótese 4_:** Artistas com um maior número de músicas no Spotify têm mais streams.
+- **_Hipótese 5_:** As características da música influenciam o sucesso em termos de número de streams no Spotify.
+
 <details>
   <summary><strong style="font-size: 16px;">Equipe</strong></summary>
   
