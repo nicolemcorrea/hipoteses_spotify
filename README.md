@@ -1,42 +1,42 @@
-# Teste de Hipóteses - Spotify
-Neste projeto, foram utilizadas as ferramentas BigQuery, Google Colab e Power BI com o objetivo de aplicar o teste de hipóteses sobre uma base de dados da plataforma Spotify.
+<details>
+  <summary><strong style="font-size: 16px;">Teste de Hipóteses - Spotify</strong></summary>
+  
+  Neste projeto, foram utilizadas as ferramentas BigQuery, Google Colab e Power BI com o objetivo de aplicar o teste de hipóteses sobre uma base de dados da plataforma Spotify.
+</details>
 
+<details>
+  <summary><strong style="font-size: 16px;">Objetivo</strong></summary>
+  
+  Através de uma base de dados da plataforma Spotify, o objetivo deste projeto foi aplicar testes estatísticos (correlação, teste de significância e regressão linear) para validar ou refutar hipóteses levantadas num cenário onde uma gravadora está buscando lançar um novo artista e busca entender o contexto da indústria musical.
+</details>
 
-## Objetivo
+<details>
+  <summary><strong style="font-size: 16px;">Equipe</strong></summary>
+  
+  - Nicole Machado Corrêa
+  - Lays Silva
+</details>
 
-Através de uma base de dados da plataforma Spotify, o objetivo deste projeto foi aplicar testes estatísticos (correlação, teste de significância e regressão linear) para validar ou refutar hipóteses levantadas num cenário onde uma gravadora está buscando lançar um novo artista e busca entender o contexto da indústria musical.
+<details>
+  <summary><strong style="font-size: 16px;">Ferramentas e Tecnologias</strong></summary>
+  
+  - BigQuery
+  - Google Colab
+  - Power BI
+  - Python
+  - SQL
+</details>
 
-As hipóteses levantadas foram:
-
-- **_Hipótese 1_:** Músicas com BPM (Batidas Por Minuto) mais altos fazem mais sucesso em termos de número de streams no Spotify.
-- **_Hipótese 2_:** As músicas mais populares no ranking do Spotify também possuem um comportamento semelhante em outras plataformas, como a Deezer.
-- **_Hipótese 3_:** A presença de uma música em um maior número de playlists está correlacionada com um maior número de streams.
-- **_Hipótese 4_:** Artistas com um maior número de músicas no Spotify têm mais streams.
-- **_Hipótese 5_:** As características da música influenciam o sucesso em termos de número de streams no Spotify.
-
-## Equipe
-
-- Nicole Machado Corrêa
-- Lays Silva
-
-## Ferramentas e Tecnologias
-
-- BigQuery
-- Google Colab
-- Power BI
-- Python
-- SQL
-
-## Processamento e Análises
-
-### Importação da base de dados
-
-A primeira etapa deste projeto foi realizar a importação das bases de dados para o ambiente BigQuery. Dentro da opção do Google Cloud “BigQuery” foi criada uma pasta chamada “projeto02_hipoteses”. Para isso, as tabelas foram importadas diretamente através do upload de arquivos, e adicionados os três arquivos CSV correspondentes a “_track_in_competition_”, “_track_in_spotify_” e “_track_technical_info_” dentro de uma subpasta chamada “_dados_spotify_”.
-
-
-### Dados nulos
-
-Para identificar e tratar valores nulos, foi utilizado os comandos SQL SELECT, FROM, WHERE e IS NULL para buscar os valores nulos dentro de cada uma das variáveis das tabelas. Verificou-se que havia 50 valores nulos na variável “_in_shazam_charts_” e 95 valores nulos na variável “_key_”. Para a variável  “_in_shazam_charts_”, optou-se por utilizar o valor da mediana para o preenchimento dos valores nulos, uma vez que observou-se que ao aplicar este tratamento, a média dos dados muito pouco variou.
+<details>
+  <summary><strong style="font-size: 16px;">Processamento e Análises</strong></summary>
+  
+  ### Importação da base de dados
+  
+  A primeira etapa deste projeto foi realizar a importação das bases de dados para o ambiente BigQuery. Dentro da opção do Google Cloud “BigQuery” foi criada uma pasta chamada “projeto02_hipoteses”. Para isso, as tabelas foram importadas diretamente através do upload de arquivos, e adicionados os três arquivos CSV correspondentes a “_track_in_competition_”, “_track_in_spotify_” e “_track_technical_info_” dentro de uma subpasta chamada “_dados_spotify_”.
+  
+  ### Dados nulos
+  
+  Para identificar e tratar valores nulos, foi utilizado os comandos SQL SELECT, FROM, WHERE e IS NULL para buscar os valores nulos dentro de cada uma das variáveis das tabelas. Verificou-se que havia 50 valores nulos na variável “_in_shazam_charts_” e 95 valores nulos na variável “_key_”. Para a variável  “_in_shazam_charts_”, optou-se por utilizar o valor da mediana para o preenchimento dos valores nulos, uma vez que observou-se que ao aplicar este tratamento, a média dos dados muito pouco variou.
 
 ### Dados duplicados
 
@@ -70,9 +70,10 @@ Através dos comandos CONCAT, CAST E JOIN, foram criadas as variáveis abaixo.
 ###  União de tabelas
 
 Ao final, as tabelas “_track_in_competition_”, “_track_in_spotify_” e “_track_technical_info_” foram unidas através dos comandos CREATE TABLE e LEFT JOIN e JOIN, gerando a tabela “_dados_spotify_final_”.
+</details>
 
 
-## Análise exploratória
+ <summary><strong style="font-size: 16px;">Análise Exploratória</strong></summary>
 
 ###  Comportamento e visualização dos dados
 
@@ -103,7 +104,8 @@ Dentro do ambiente do Google Colab, utilizou-se a linguagem Python para realizar
 Utilizando Python, realizou-se uma análise de regressão linear para as hipóteses, para permitir examinar as relações entre as variáveis e determinar se existem associações significativas entre elas ou não. Além disso, foram também criados gráficos de dispersão para a visualização do comportamento destas variáveis, em cada uma das hipóteses do projeto.
 
 
-## Resultados e conclusões
+<summary><strong style="font-size: 16px;">Resultados e Conclusões</strong></summary>
+
 
 Os resultados serão apresentados com base em cada umas das hipóteses.
 
@@ -119,7 +121,9 @@ Os resultados serão apresentados com base em cada umas das hipóteses.
 De forma geral, optou-se por refutar essa hipótese, pois a característica que apresentam uma influência no número de streams na percepção análitica não são estatisticamente significativas se comparado com os outros coeficientes, e de acordo com os outros testes tem-se um outro cenário que corrobora na decisão de refutar essa hipótese. 
  
 
-## Próximos Passos
+<summary><strong style="font-size: 16px;">Próximos Passos</strong></summary>
+
 
 Como indicações e insights sobre o projeto, dado que a presença de uma música em um maior número de playlists está fortemente correlacionada com um aumento significativo no número de streams, é recomendável que a gravadora invista em estratégias para incluir as músicas do novo artista em playlists relevantes nas plataformas de streaming.
 Também seria interessante a gravadora incentivar o novo artista a lançar um catálogo diversificado de músicas, para aumentar sua visibilidade e sucesso na plataforma. Além disso, embora algumas características das músicas possam influenciar o sucesso em termos de número de streams, é importante reconhecer que nem todas as características demonstraram uma relação estatisticamente significativa. Portanto, ao produzir músicas para o novo artista, a gravadora pode se concentrar nas características que mostraram influência significativa, como danceability e speechiness, e considerar ajustes para melhorar esses aspectos nas faixas. A gravadora também pode observar com atenção a correlação positiva entre as músicas mais populares no ranking do Spotify e seu desempenho nas plataformas Deezer e Apple. Isso sugere que estratégias bem-sucedidas no Spotify podem ser replicadas em outras plataformas de streaming para maximizar o alcance do novo artista Seguindo estas sugestões, a gravadora pode aumentar as chances de sucesso do novo artista no mercado de streaming, aproveitando os insights gerados a partir das análises das hipóteses.
+
