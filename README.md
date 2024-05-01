@@ -78,7 +78,7 @@ Já para dados discrepantes, utilizou-se o comando de manipulação de strings R
 
 ###  Comportamento e visualização dos dados
 
-  Ao importar a tabela csv “_dados_spotify_final_” para o ambiente do Power BI,  realizou-se um agrupamento para verificar quantos streams havia por artista, e criados gráficos de barras para a visualização desta variável categórica. O mesmo foi feito para observar quantos streams havia por música.
+  Ao importar a base de dados tratados ao ambiente do Power BI,  realizou-se um agrupamento para verificar quantos streams havia por artista, e criados gráficos de barras para a visualização desta variável categórica. O mesmo foi feito para observar quantos streams havia por música.
   Além disso, verificou-se os valores de média, mediana e desvio padrão das variáveis numéricas da tabela, bem como criou-se histogramas para a visualização da distribuição das variáveis. Também foi gerado um gráfico de linhas para a visualização do número de músicas lançadas por ano. 
 
 ###  Cálculo de quartis
