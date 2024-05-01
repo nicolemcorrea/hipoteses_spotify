@@ -107,7 +107,7 @@ Já para dados discrepantes, utilizou-se o comando de manipulação de strings R
 <details>
 <summary><strong style="font-size: 16px;">Resultados e Conclusões</strong></summary>
 
-  Os resultados serão apresentados com base em cada umas das hipóteses.
+  Com base na análise exploratória dos dados, chegou-se as seguintes conclusões:
 
 - **_Hipótese 1_:** a suposição inicial, de que músicas com bpm (batidas por minuto) mais altas tendem a ter um maior número de streams não se confirmou. No teste de correlação, observou-se um valor de p= -0.0023, indicando que há uma fraca correlação negativa entre as variáveis “_bpm_” e “_streams_”. Além disso, o teste de significância indicou que não há diferença significativa entre as categorias “_alta_” e “_baixa_” da característica “_bpm_” em relação ao número de streams. Por fim, o teste de regressão apresentou um valor de p = 0.944 para a variável independente “_bpm_”, ou seja,  a variável bpm não é estatisticamente significativa para prever os streams, indicando que ela não é uma boa “preditora”. Assim, não há evidência estatística para apoiar a ideia de que as variáveis “_bpm_” (batidas por minuto) e “_streams_” têm uma relação significativa uma com a outra. 
 
