@@ -64,14 +64,14 @@ HAVING COUNT (*) > 1
 
 #Identificar e tratar dados discrepantes em track_name:
 SELECT  
-track_name,
-REGEXP_REPLACE(track_name, r'[^a-zA-Z0-9 ]', '') AS track_name_corrigido
+ track_name,
+ REGEXP_REPLACE(track_name, r'[^a-zA-Z0-9 ]', '') AS track_name_corrigido
 FROM `dados_spotify.track_in_spotify`
 
 #Identificar dados discrepantes em artist_s_name:
 SELECT  
-artist_s__name,
-REGEXP_REPLACE(artist_s__name, r'[^a-zA-Z0-9 ]', '') AS artist_s__name_corrigido
+ artist_s__name,
+ REGEXP_REPLACE(artist_s__name, r'[^a-zA-Z0-9 ]', '') AS artist_s__name_corrigido
 FROM `dados_spotify.track_in_spotify`
 
 #Consulta para identificar dados discrepantes na tabela track_technical_info:
@@ -79,7 +79,7 @@ SELECT
 REGEXP_REPLACE(key, r'[^a-zA-Z0-9]', '') AS key_corrigido
 FROM `dados_spotify.track_technical_info`
 
-#Abaixo, a consulta mostra os nomes antes de corrigir e após corrigido:
+#Abaixo, a consulta mostra artist_s_name antes de corrigir e após corrigido:
 SELECT
 key,
 REGEXP_REPLACE(key, r'[^a-zA-Z0-9]', '') AS key_corrigido
@@ -95,7 +95,7 @@ SELECT
   EXCEPT (key,mode)
 FROM `dados_spotify.track_technical_info`
 
-#Criar data lançamento:
+#Criar variavel release_date_concat:
 SELECT
   track_id,
   track_name,
@@ -138,10 +138,6 @@ WHERE
 ORDER BY 
   total_ocorrencias DESC;
 
-#Consulta para criar uma variável cuja soma são as variáveis numéricas de playlists:
-SELECT *, (in_apple_playlists + in_deezer_playlists + in_shazam_playlists) AS soma_variaveis
-FROM `dados_spotify.track_in_competition`
-
 #Consulta para ver os valores mínimos, máximos e a média da variável numérica "in_apple_playlists' em track_in_competition (o mesmo comando foi realizado para as variáveis in_apple_charts, in_deezer_playlists, in_deezer_charts e in_shazam_charts):
 SELECT
 MAX(in_apple_playlists) AS maximo,
@@ -150,8 +146,7 @@ AVG(in_apple_playlists) AS media
 FROM `dados_spotify.track_in_competition`
 WHERE in_apple_playlists IS NOT NULL;
 
-#Criar nova tabela para inserir novas variáveis
-
+#Criar nova tabela e inserir a variavel soma_playlists
 CREATE TABLE `projeto02-hipoteses.dados_spotify.dados_consolidados_spotify` AS (
 SELECT
   *,
