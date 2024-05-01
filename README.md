@@ -16,7 +16,7 @@ As hipóteses levantadas foram:
 ## Equipe
 
 - Nicole Machado Corrêa
-- Laís Silva
+- Lays Silva
 
 ## Ferramentas e Tecnologias
 
