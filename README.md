@@ -3,7 +3,7 @@
   Neste projeto, foram utilizadas as ferramentas BigQuery, Google Colab e Power BI e a aplicação de testes para validação de hipóteses sobre uma base de dados da plataforma Spotify.
 
 <details>
-  <summary><strong style="font-size: 18px;">Objetivo</strong></summary>
+  <summary><strong style="font-size: 16px;">Objetivo</strong></summary>
   
   O objetivo deste projeto foi aplicar testes estatísticos (correlação, teste de significância e regressão linear) para validar ou refutar hipóteses levantadas num cenário onde uma gravadora está buscando lançar um novo artista e busca entender o contexto da indústria musical.
 
