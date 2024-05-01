@@ -14,6 +14,8 @@ As hipóteses levantadas foram:
 - **_Hipótese 4_:** Artistas com um maior número de músicas no Spotify têm mais streams.
 - **_Hipótese 5_:** As características da música influenciam o sucesso em termos de número de streams no Spotify.
 
+
+
 <details>
   <summary><strong style="font-size: 16px;">Equipe</strong></summary>
   
