@@ -1,4 +1,4 @@
-# Teste de Hipóteses - Spotify
+# Teste de Hipóteses - Spotify :spotify:
   
   Neste projeto, foram utilizadas as ferramentas BigQuery, Google Colab e Power BI e a aplicação de testes para validação de hipóteses sobre uma base de dados da plataforma Spotify.
 
