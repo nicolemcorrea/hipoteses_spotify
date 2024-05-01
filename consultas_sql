@@ -1,1 +1,8 @@
+<!-- Verificando valor nulo na tabela track_in_spotify: -->
+```SELECT 
+COUNT(*)
+FROM `dados_spotify.track_in_spotify`
+WHERE track_id IS NULL 
+
+
 
