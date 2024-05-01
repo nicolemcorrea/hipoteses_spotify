@@ -1,14 +1,10 @@
-<details>
-  <summary><strong style="font-size: 16px;">Teste de Hipóteses - Spotify</strong></summary>
+# Teste de Hipóteses - Spotify
   
   Neste projeto, foram utilizadas as ferramentas BigQuery, Google Colab e Power BI com o objetivo de aplicar o teste de hipóteses sobre uma base de dados da plataforma Spotify.
-</details>
 
-<details>
-  <summary><strong style="font-size: 16px;">Objetivo</strong></summary>
+## Objetivo
   
   Através de uma base de dados da plataforma Spotify, o objetivo deste projeto foi aplicar testes estatísticos (correlação, teste de significância e regressão linear) para validar ou refutar hipóteses levantadas num cenário onde uma gravadora está buscando lançar um novo artista e busca entender o contexto da indústria musical.
-</details>
 
 <details>
   <summary><strong style="font-size: 16px;">Equipe</strong></summary>
@@ -72,7 +68,7 @@ Através dos comandos CONCAT, CAST E JOIN, foram criadas as variáveis abaixo.
 Ao final, as tabelas “_track_in_competition_”, “_track_in_spotify_” e “_track_technical_info_” foram unidas através dos comandos CREATE TABLE e LEFT JOIN e JOIN, gerando a tabela “_dados_spotify_final_”.
 </details>
 
-
+<details>
  <summary><strong style="font-size: 16px;">Análise Exploratória</strong></summary>
 
 ###  Comportamento e visualização dos dados
@@ -102,8 +98,9 @@ Dentro do ambiente do Google Colab, utilizou-se a linguagem Python para realizar
 ###  Teste de regressão linear
 
 Utilizando Python, realizou-se uma análise de regressão linear para as hipóteses, para permitir examinar as relações entre as variáveis e determinar se existem associações significativas entre elas ou não. Além disso, foram também criados gráficos de dispersão para a visualização do comportamento destas variáveis, em cada uma das hipóteses do projeto.
+</details>
 
-
+<details>
 <summary><strong style="font-size: 16px;">Resultados e Conclusões</strong></summary>
 
 
@@ -119,11 +116,12 @@ Os resultados serão apresentados com base em cada umas das hipóteses.
 
 - **_Hipótese 5_:** a última hipótese que foi analisada era de que as características de uma música influenciam o sucesso em termos de número de streams no Spotify. No teste de  correlação, observamos que todas as características das músicas demonstraram correlação negativa muito fraca com relação a quantidade de streams,já que os valores de correlação foram todos próximos de zero. Já no teste de significância, se observou somente na variável "_speechiness_" diferença significativa entre as categorias da variável e a quantidade de streams. Com base na análise da regressão linear, observou-se que algumas características da música, como “_danceability_” e “_speechiness_” têm uma influência significativa no número de streams no Spotify. No entanto, outras características, como valence, energy, acousticness, instrumentalness e liveness, não apresentaram uma relação estatisticamente significativa com os streams. Portanto, enquanto algumas características da música parecem influenciar o sucesso em termos de número de streams, outras não demonstraram uma associação clara com essa métrica.
 De forma geral, optou-se por refutar essa hipótese, pois a característica que apresentam uma influência no número de streams na percepção análitica não são estatisticamente significativas se comparado com os outros coeficientes, e de acordo com os outros testes tem-se um outro cenário que corrobora na decisão de refutar essa hipótese. 
- 
+</details>
 
+<details>
 <summary><strong style="font-size: 16px;">Próximos Passos</strong></summary>
-
 
 Como indicações e insights sobre o projeto, dado que a presença de uma música em um maior número de playlists está fortemente correlacionada com um aumento significativo no número de streams, é recomendável que a gravadora invista em estratégias para incluir as músicas do novo artista em playlists relevantes nas plataformas de streaming.
 Também seria interessante a gravadora incentivar o novo artista a lançar um catálogo diversificado de músicas, para aumentar sua visibilidade e sucesso na plataforma. Além disso, embora algumas características das músicas possam influenciar o sucesso em termos de número de streams, é importante reconhecer que nem todas as características demonstraram uma relação estatisticamente significativa. Portanto, ao produzir músicas para o novo artista, a gravadora pode se concentrar nas características que mostraram influência significativa, como danceability e speechiness, e considerar ajustes para melhorar esses aspectos nas faixas. A gravadora também pode observar com atenção a correlação positiva entre as músicas mais populares no ranking do Spotify e seu desempenho nas plataformas Deezer e Apple. Isso sugere que estratégias bem-sucedidas no Spotify podem ser replicadas em outras plataformas de streaming para maximizar o alcance do novo artista Seguindo estas sugestões, a gravadora pode aumentar as chances de sucesso do novo artista no mercado de streaming, aproveitando os insights gerados a partir das análises das hipóteses.
+</details>
 
