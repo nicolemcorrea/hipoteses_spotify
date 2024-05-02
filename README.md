@@ -30,7 +30,7 @@ As hipóteses levantadas foram:
   - Google Colab
   - Power BI
   - Python
-  - SQL
+ 
 </details>
 
 <details>
