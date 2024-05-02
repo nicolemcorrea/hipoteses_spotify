@@ -18,7 +18,7 @@ FROM
 WHERE
   in_shazam_charts IS NULL
 
-#Consulta para substituir os valores nulos em in_shazam_charts pela mediana e manter os demais dados na planilha:
+#Consulta para substituir os valores nulos na variável "in_shazam_charts" pela mediana e manter os demais dados na planilha:
 WITH median_values AS (
  SELECT
 APPROX_QUANTILES(in_shazam_charts, 100)[OFFSET(50)] AS mediana_chazam_charts
@@ -62,30 +62,24 @@ FROM `dados_spotify.track_in_competition`
 GROUP BY track_id
 HAVING COUNT (*) > 1
 
-#Identificar e tratar dados discrepantes em track_name:
+#Identificar e tratar dados discrepantes em na variável "track_name" da tabela track_in_spotify:
 SELECT  
  track_name,
  REGEXP_REPLACE(track_name, r'[^a-zA-Z0-9 ]', '') AS track_name_corrigido
 FROM `dados_spotify.track_in_spotify`
 
-#Identificar dados discrepantes em artist_s_name:
+#Identificar dados discrepantes na variável "artist_s_name" da tabela track_in_spotify:
 SELECT  
  artist_s__name,
  REGEXP_REPLACE(artist_s__name, r'[^a-zA-Z0-9 ]', '') AS artist_s__name_corrigido
 FROM `dados_spotify.track_in_spotify`
 
-#Consulta para identificar dados discrepantes na tabela track_technical_info:
+#Consulta para identificar dados discrepantes na tabela "track_technical_info":
 SELECT  
 REGEXP_REPLACE(key, r'[^a-zA-Z0-9]', '') AS key_corrigido
 FROM `dados_spotify.track_technical_info`
 
-#Abaixo, a consulta mostra artist_s_name antes de corrigir e após corrigido:
-SELECT
-key,
-REGEXP_REPLACE(key, r'[^a-zA-Z0-9]', '') AS key_corrigido
-FROM `dados_spotify.track_technical_info`
-
-#Alterar o tipo de dado: 
+#Alterar o tipo de dado da variável "streams": 
 SELECT SAFE_CAST (streams AS INT64) AS streams_corrigido
 FROM `dados_spotify.track_in_spotify`
 
@@ -95,7 +89,7 @@ SELECT
   EXCEPT (key,mode)
 FROM `dados_spotify.track_technical_info`
 
-#Criar variavel release_date_concat:
+#Criar variável "release_date_concat":
 SELECT
   track_id,
   track_name,
@@ -146,7 +140,7 @@ AVG(in_apple_playlists) AS media
 FROM `dados_spotify.track_in_competition`
 WHERE in_apple_playlists IS NOT NULL;
 
-#Criar nova tabela e inserir a variavel soma_playlists
+#Criar nova tabela e inserir a variavel "soma_playlists"
 CREATE TABLE `projeto02-hipoteses.dados_spotify.dados_consolidados_spotify` AS (
 SELECT
   *,
@@ -155,7 +149,7 @@ FROM
   `dados_spotify.dados_consolidados`
 )
 
-#Consulta para criar tabela dados_spotify_final e criar a variável count_music_artsolo:
+#Consulta para criar tabela "dados_spotify_final" e criar a variável "count_music_artsolo":
 CREATE TABLE `dados_spotify.dados_spotify_final` AS
 WITH musicas_artsolo AS (
   SELECT
@@ -178,7 +172,7 @@ ON artista_solo.artist_s_name = s.artist_s_name
 LEFT JOIN musicas_artsolo m
 ON s.artist_s_name = m.artist_s_name;
 
-# Criação de nova tabela com a informação de quartis e categorias
+# Criação de nova tabela "dados_spotify_catgorizados" com a informação de quartis e categorias
 CREATE TABLE `projeto02-hipoteses.dados_spotify.dados_spotify_categorizados`
 AS
 
@@ -206,7 +200,7 @@ WITH quartis AS (
     `dados_spotify.dados_spotify_final`
 ),
 
-# Consulta para criação das categorias "alta" e "baixa":
+# Consulta para criação das categorias "alta" e "baixa" dos quartis:
 categorias AS (
   SELECT
     track_id,
