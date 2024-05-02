@@ -34,7 +34,7 @@ As hipóteses levantadas foram:
 </details>
 
 <details>
-  <summary><strong style="font-size: 16px;">Processamento e Análises</strong></summary>
+  <summary><strong style="font-size: 16px;">Processamento dos Dados</strong></summary>
   
   ### Importação da base de dados
   
