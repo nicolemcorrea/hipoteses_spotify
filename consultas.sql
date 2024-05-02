@@ -230,6 +230,7 @@ FROM
 
 
 #Consulta para o cálculo de correlação dos charts do Spotify com as demais plataformas (HIPOTESE 2):
+ SELECT
     CORR(in_spotify_charts, in_shazam_charts) AS correlacao_shazam,
     CORR(in_spotify_charts, in_apple_charts) AS correlacao_apple,
     CORR(in_spotify_charts, in_deezer_charts) AS correlacao_deezer
