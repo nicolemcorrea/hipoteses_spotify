@@ -134,5 +134,5 @@ Também seria interessante a gravadora incentivar o novo artista a lançar um ca
   
 - Google Colab: https://colab.research.google.com/drive/1ksAfUp8JR4KY0r7qbY5UWm24zwz6KcDr?usp=sharing
 
-(dashboard.pdf)
+
 
