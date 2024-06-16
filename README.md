@@ -136,7 +136,6 @@ Também seria interessante a gravadora incentivar o novo artista a lançar um ca
 - 
 </details>
 
-(https://github.com/nicolemcorrea/raw/main/dashboard.pdf)
 
 
 
